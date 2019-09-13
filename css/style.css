@@ -1,0 +1,37 @@
+body{
+  background-color: #f3f3f3;
+}
+
+h1{
+  font-size: 3rem;
+  color: coral;
+  text-align: center;
+}
+
+h2{
+  font-size: 2rem;
+  color: skyblue;
+  text-align: center;
+}
+
+p{
+  font-size: 1.6rem;
+  text-align:center;
+}
+
+button{
+  width: 100px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #FFF;
+  background-color: #333;
+}
+
+#button{
+  text-align: center;
+}
+
+input{
+  
+}
