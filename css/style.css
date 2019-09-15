@@ -30,8 +30,20 @@ button{
 
 #button{
   text-align: center;
+  margin: 5px;
 }
 
-input{
-  
+textarea{
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+#input{
+  text-align: center;
+  margin: 5px;
+}
+
+#myscript{
+  display: block;
 }
