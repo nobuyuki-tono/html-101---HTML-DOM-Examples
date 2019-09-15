@@ -5,7 +5,7 @@ document.strictErrorChecking = true;
 var baseUri = document.baseURI;
 var cookie = document.cookie;
 var doctype = document.doctype;
-// var doctype2 = window.doctype;
+var docMode = document.Mode;
 var relativeUri = document.documentURI;
 var domImplementation = document.implementation;
 var encordingType = document.inputEncoding;
@@ -13,15 +13,18 @@ var errorcheck = document.strictErrorChecking;
 var title = document.title;
 var script = document.scripts.namedItem("myscript").type;
 // var script2 = document.scripts.namedItem("myscript2").text;
+var modName = "HTML";
+var modVer = "2.0";
+var test2 = document.implementation.hasFeature(modName, modVer);
 
 
 function changeText(){
   document.getElementById('p1').innerHTML="This is base URI: " + baseUri;
   document.getElementById('p2').innerHTML="This is cookie: " + cookie;
   document.getElementById('p3').innerHTML="This is !doctype:  " + doctype;
-  document.getElementById('p4').innerHTML="This is !doctype:  " + doctype;
+  document.getElementById('p4').innerHTML="This is the mode used by the browser(IE only property):  " + docMode;
   document.getElementById('p5').innerHTML="This is relative URI:  " + relativeUri;
-  document.getElementById('p6').innerHTML="This is relative URI:  " + domImplementation;
+  document.getElementById('p6').innerHTML="This is document implementation:  " + domImplementation + "<br>"+"DOM " + modName + " " + modVer + " supported?: " + test2;
   document.getElementById('p7').innerHTML="This is Encording Type:  " + encordingType;
   document.getElementById('p8').innerHTML="This checks error checking is working:  " + errorcheck;
   document.getElementById('p9').innerHTML="This is title of this document :  " + title;
@@ -31,9 +34,6 @@ function changeText(){
   
 }
 
-function changeText2(){
-  document.getElementById('p1').innerHTML="Hello World";
-}
 
 function mouseOver(){
 //   document.getElementById('btn2').style.visibility ="hidden";

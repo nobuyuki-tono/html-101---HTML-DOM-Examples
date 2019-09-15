@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   </head>
-  <body onload="changeText()">
+  <body onload="changeText(), test()">
     <h1>HTML DOM Example</h1>
     <h2>Assignmrnt</h2>
     <p id="p1">Hello please click the button</p>
@@ -21,12 +21,9 @@
     <p id="p7">Hello please click the button</p>
     <p id="p8">Hello please click the button</p>
     <p id="p9">Hello please click the button</p>
-    <p id="p10">Hello please click the button</p>
     
     <div id="button">
-      <button id="btn1" onclick="changeText2()">Click Me</button>
       <button id="btn2" onmouseover="mouseOver()" onmouseout="mouseOut()">Hover Me</button><br>
-      <button id="btn3" onclick="test()">Hover Me</button><br>
     </div>
 
     <div id="input">
@@ -42,7 +39,9 @@
         var x = 3;
 
         var y = document.scripts.namedItem("myscript2").text;
-        document.getElementById('p10').innerHTML= y;
+        document.getElementById('inputText').value = y;
+
+        var x ="I don't know how to get external Js file code though I can get internal js code";
       }
     </script>
   </body>
